@@ -10,6 +10,8 @@
         {{ $baseurl := .Site.BaseURL }}
       </div>
 
+      {{ partial "sponsor.html" . }}
+
       <article class="post-content">
       {{ .Content }}
       </article>
