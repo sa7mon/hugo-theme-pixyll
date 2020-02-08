@@ -1,6 +1,8 @@
 <div id="sponsor">
 	{{ $randomSponsor := shuffle .Site.Data.sponsors | first 1 }}
 	{{ range $randomSponsor }}
-		<a href="{{ .url }}">{{ .text }}</a>
+		<a href="{{ .url }}" target="_blank" rel="noopener">{{ .text }}</a>
 	{{ end }}
+	<br>
+	<span class="about"><a href="/sponsors">About these ads</a></span>
 </div>
